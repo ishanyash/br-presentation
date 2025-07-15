@@ -23,13 +23,17 @@ filtered = df[df['region'].isin(selected_regions) & df['yield_category'].isin(se
 
 # Map layer color based on yield category
 color_map = {
-    'Very High': [0, 128, 0],
-    'High': [34, 139, 34],
-    'Medium': [255, 165, 0],
-    'Low': [255, 0, 0]
+    "Very High": [0, 128, 0],
+    "High": [34, 139, 34],
+    "Medium": [255, 165, 0],
+    "Low": [255, 0, 0],
 }
 
-filtered['color'] = filtered['yield_category'].map(color_map).fillna([200, 200, 200])
+# Map yield categories to colors and use a grey default for any unmapped
+# values. Using dict.get avoids errors with fillna expecting scalar values.
+filtered["color"] = filtered["yield_category"].apply(
+    lambda cat: color_map.get(cat, [200, 200, 200])
+)
 
 layer = pdk.Layer(
     "ScatterplotLayer",

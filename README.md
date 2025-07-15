@@ -32,3 +32,7 @@ streamlit run streamlit_app/app.py
 - `dataset*.csv` – data used during the analysis
 
 The dataset used in the dashboard is located at `streamlit_app/data/investment_analysis_phase3.csv`.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
