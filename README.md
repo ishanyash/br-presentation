@@ -20,9 +20,10 @@ The dashboard lives under `streamlit_app/` and can be run either locally or via 
 
 ### Local Python execution
 
-Install the dependencies and start Streamlit:
+Install the dependencies in a virtual environment and start Streamlit:
 
 ```bash
+python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 streamlit run streamlit_app/app.py
 ```
