@@ -9,8 +9,9 @@ This dashboard displays UK property investment opportunities with a focus on ROI
 - `pages/` – additional Streamlit pages
 
 ## Usage
-Run the dashboard from this folder with:
+Run the dashboard with:
 ```bash
 streamlit run app.py
 ```
-Make sure you are inside `streamlit_app` when executing the command.
+from within the `streamlit_app` folder.
+

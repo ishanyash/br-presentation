@@ -8,7 +8,6 @@ The dashboard lives under `streamlit_app/` and can be run either locally or via 
 
 ### Using Docker
 
-1. Build the image from the repository root:
    ```bash
    docker build -t br-dashboard .
    ```
@@ -20,18 +19,11 @@ The dashboard lives under `streamlit_app/` and can be run either locally or via 
 
 ### Local Python execution
 
-Install the dependencies and start Streamlit from the repository root:
 
-```bash
 pip install -r requirements.txt
 streamlit run streamlit_app/app.py
 ```
 
-If you are inside the `streamlit_app` directory instead, run:
-
-```bash
-streamlit run app.py
-```
 
 ## Repository structure
 
