@@ -1,4 +1,5 @@
 import os
+
 import warnings
 from functools import lru_cache
 
@@ -56,5 +57,4 @@ def load_data(drop_invalid: bool = False) -> pd.DataFrame:
                 f"Dropping {len(invalid_idx)} rows with missing geocode results"
             )
             df = df.drop(index=invalid_idx).reset_index(drop=True)
-
     return df

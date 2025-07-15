@@ -8,7 +8,6 @@ The dashboard lives under `streamlit_app/` and can be run either locally or via 
 
 ### Using Docker
 
-1. Build the image:
    ```bash
    docker build -t br-dashboard .
    ```
@@ -20,13 +19,11 @@ The dashboard lives under `streamlit_app/` and can be run either locally or via 
 
 ### Local Python execution
 
-Install the dependencies in a virtual environment and start Streamlit:
 
-```bash
-python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 streamlit run streamlit_app/app.py
 ```
+
 
 ## Repository structure
 
@@ -35,7 +32,3 @@ streamlit run streamlit_app/app.py
 - `dataset*.csv` – data used during the analysis
 
 The dataset used in the dashboard is located at `streamlit_app/data/investment_analysis_phase3.csv`.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).

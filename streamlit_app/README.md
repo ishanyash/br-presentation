@@ -14,3 +14,4 @@ Run the dashboard with:
 streamlit run app.py
 ```
 from within the `streamlit_app` folder.
+
