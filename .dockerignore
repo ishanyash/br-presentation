@@ -1,0 +1,7 @@
+# Exclude large raw datasets and notebooks
+*.ipynb
+dataset.csv
+dataset_cleaned_phase1.csv
+dataset_features_phase1.csv
+dataset_imputed_phase2.csv
+investment_analysis_phase3.csv
